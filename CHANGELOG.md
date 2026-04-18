@@ -1,5 +1,21 @@
 # @stackra/ts-container
 
+## 2.0.7 — 2026-04-18
+
+### Improvements
+
+- 🖼️ **Banner in Slack notification** — the package banner image now appears at
+  the top of the Slack release announcement
+- 💬 **Slack mrkdwn conversion** — changelog content is now converted from
+  GitHub-flavored markdown to Slack-compatible mrkdwn (`###` → `*bold*`,
+  `**text**` → `*text*`, `- ` → `• `)
+- 🔧 **SVG-to-PNG Kiro hook** — added a local hook that auto-regenerates
+  `banner.png` from `banner.svg` whenever the SVG is edited
+- 📏 **Steering files** — added workspace-level steering docs for tech stack,
+  project structure, and product overview
+
+---
+
 ## 2.0.6 — 2026-04-18
 
 ### Improvements
