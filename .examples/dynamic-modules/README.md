@@ -43,4 +43,4 @@ npx tsx .examples/dynamic-modules/main.ts
 
 ## License
 
-MIT © [Stackra](https://github.com/stackra-coco)
+MIT © [Stackra](https://github.com/stackra-co)

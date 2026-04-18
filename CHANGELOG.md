@@ -1,12 +1,23 @@
 # @stackra/ts-container
 
+## 2.0.5 — 2026-04-18
+
+### Fixes
+
+- 🔗 **Fix GitHub org URL** — corrected `stackra-coco` → `stackra-co` in all
+  example READMEs and the publish workflow (release notes link, Slack
+  notification link)
+- 📝 **Changelog wording** — minor copy fix in the v2.0.4 changelog entry
+
+---
+
 ## 2.0.4 — 2026-04-18
 
 ### Fixes
 
 - 🔗 **Correct repository URL** — `package.json` and `README.md` now point to
-  `github.com/stackra-co/ts-container` (was `stackra-coco`); this was causing
-  npm provenance verification to fail on publish
+  `github.com/stackra-co/ts-container` (was `stackra-co`); this was causing npm
+  provenance verification to fail on publish
 
 ---
 

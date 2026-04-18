@@ -58,4 +58,4 @@ Then use `main.tsx` as your entry point.
 
 ## License
 
-MIT © [Stackra](https://github.com/stackra-coco)
+MIT © [Stackra](https://github.com/stackra-co)

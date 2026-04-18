@@ -172,7 +172,7 @@ jobs:
           if [ ! -s release_body.md ]; then
             echo "Release v${VERSION}" > release_body.md
           fi
-          echo "See [CHANGELOG](https://github.com/stackra-coco/ts-container/blob/main/CHANGELOG.md) for full details." >> release_body.md
+          echo "See [CHANGELOG](https://github.com/stackra-co/ts-container/blob/main/CHANGELOG.md) for full details." >> release_body.md
 
       - name: 🎉 Create Release
         uses: softprops/action-gh-release@v2
@@ -244,7 +244,7 @@ jobs:
                     },
                     {
                       "type": "mrkdwn",
-                      "text": "*Release:*\n<https://github.com/stackra-coco/ts-container/releases/tag/${{ needs.validate.outputs.tag }}|View on GitHub>"
+                      "text": "*Release:*\n<https://github.com/stackra-co/ts-container/releases/tag/${{ needs.validate.outputs.tag }}|View on GitHub>"
                     }
                   ]
                 }
