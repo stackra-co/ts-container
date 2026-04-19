@@ -21,7 +21,7 @@ import {
   type OnApplicationShutdown,
   type BeforeApplicationShutdown,
   Inject,
-} from '@stackra-inc/ts-container';
+} from '@stackra/ts-container';
 
 // ============================================================================
 // 1. Module Distance Tracking & Lifecycle Hook Ordering

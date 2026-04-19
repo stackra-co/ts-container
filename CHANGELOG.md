@@ -1,10 +1,10 @@
-# @stackra-inc/ts-container
+# @stackra/ts-container
 
 ## 2.0.8 — 2026-04-20
 
 ### Changed
 
-- 🏢 **Org rename** — migrated from `@stakraco` → `@stackra-inc` across package
+- 🏢 **Org rename** — migrated from `@stakraco` → `@stackra` across package
   name, repository URLs, README, examples, workflows, and steering docs
 - 🔧 **CI simplification** — streamlined CI workflow
 - 📝 **Steering & docs** — updated product, structure, and tech steering files
@@ -33,10 +33,10 @@
 
 - 💬 **Rich Slack release notifications** — redesigned the publish workflow's
   Slack message with full Block Kit layout: release notes from CHANGELOG.md,
-  release type badge (stable / pre-release), commit count since last tag,
-  action buttons (npm, GitHub Release, Full Changelog, Workflow Run), and a
-  context footer with actor, commit SHA, and compare link. Failure
-  notifications now include View Logs and Re-run buttons.
+  release type badge (stable / pre-release), commit count since last tag, action
+  buttons (npm, GitHub Release, Full Changelog, Workflow Run), and a context
+  footer with actor, commit SHA, and compare link. Failure notifications now
+  include View Logs and Re-run buttons.
 
 ### Fixes
 
@@ -52,8 +52,8 @@
 ### Fixes
 
 - 🔗 **Correct repository URL** — `package.json` and `README.md` now point to
-  `github.com/stackra-inc/ts-container` (was `stackra-inc`); this was causing npm
-  provenance verification to fail on publish
+  `github.com/stackra-inc/ts-container` (was `stackra-inc`); this was causing
+  npm provenance verification to fail on publish
 
 ---
 
@@ -114,9 +114,9 @@
 - `NestContainer` is renamed to `ModuleContainer`. Update any direct imports:
   ```typescript
   // Before
-  import { NestContainer } from '@stackra-inc/ts-container';
+  import { NestContainer } from '@stackra/ts-container';
   // After
-  import { ModuleContainer } from '@stackra-inc/ts-container';
+  import { ModuleContainer } from '@stackra/ts-container';
   ```
 
 ---
@@ -174,7 +174,7 @@ None. All changes are fully backward compatible.
 
 ### Major Features
 
-- 🎉 Initial release of @stackra-inc/ts-container
+- 🎉 Initial release of @stackra/ts-container
 - 💉 `@Injectable()` decorator with scope support (Singleton, Transient)
 - 🎯 `@Inject(token)` for explicit token-based constructor injection
 - ❓ `@Optional()` for optional dependency injection

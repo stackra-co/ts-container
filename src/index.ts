@@ -1,5 +1,5 @@
 /**
- * @stackra-inc/ts-container
+ * @stackra/ts-container
  *
  * NestJS-style dependency injection for React and client-side applications.
  * Built from scratch — no Inversify, no heavy runtime.
@@ -15,7 +15,7 @@
  * @example
  * ```typescript
  * import 'reflect-metadata';
- * import { Injectable, Inject, Module, Application } from '@stackra-inc/ts-container';
+ * import { Injectable, Inject, Module, Application } from '@stackra/ts-container';
  *
  * @Injectable()
  * class UserService {
@@ -32,7 +32,7 @@
  * const userService = app.get(UserService);
  * ```
  *
- * @module @stackra-inc/ts-container
+ * @module @stackra/ts-container
  */
 
 import 'reflect-metadata';
