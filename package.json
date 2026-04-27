@@ -128,7 +128,7 @@
       "hooks": {
         "source": ".kiro/hooks/",
         "destination": ".kiro/hooks/",
-        "description": "Kiro hooks (SVG to PNG banner conversion)"
+        "description": "Kiro hooks"
       }
     }
   }
