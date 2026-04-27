@@ -112,5 +112,24 @@
       "eslint": "^9.28.0",
       "vite": "^7.2.6"
     }
+  },
+  "stackra": {
+    "publish": {
+      "config": {
+        "source": "config/container.config.ts",
+        "destination": "src/config/container.config.ts",
+        "description": "Container bootstrap configuration with DI, debug mode, and app config"
+      },
+      "steering": {
+        "source": ".kiro/steering/",
+        "destination": ".kiro/steering/{module}/",
+        "description": "Kiro AI steering files for DI container patterns"
+      },
+      "hooks": {
+        "source": ".kiro/hooks/",
+        "destination": ".kiro/hooks/",
+        "description": "Kiro hooks (SVG to PNG banner conversion)"
+      }
+    }
   }
 }
