@@ -1,20 +1,14 @@
 {
-  // Extends the @stackra/typescript-config base preset which includes:
-  // strict mode, ES2022 target, bundler resolution, decorators, JSX,
-  // Node types, ignoreDeprecations, and all strict checks.
+  // Extends base: strict, ES2022, decorators, JSX, Node types, etc.
   "extends": "@stackra/typescript-config/base.json",
-
   "compilerOptions": {
-    // Build output goes to dist/ — tsup reads this
     "outDir": "./dist",
-
-    // Root includes both src/ and __tests__/ for type-checking
     "rootDir": ".",
-
-    // Path alias: import { Foo } from '@/services/foo'
-    "paths": { "@/*": ["./src/*"] }
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["@stackra/ts-support/@types"]
   },
-
   "include": ["src/**/*", "__tests__/**/*"],
   "exclude": ["node_modules", "dist", "config", ".examples"]
 }

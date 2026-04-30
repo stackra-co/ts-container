@@ -51,10 +51,10 @@ const containerConfig = defineConfig({
    * inspect the container from the browser console:
    *   `window.__APP__.get(UserService)`
    *
-   * Auto-detected from `import.meta.env.DEV` — enabled in development,
+   * Auto-detected from `env('NODE_ENV')` — enabled in development,
    * disabled in production builds automatically.
    */
-  debug: import.meta.env.DEV,
+  debug: env('NODE_ENV', 'production') !== 'production',
 
   /**
    * The global window property name for debug access.
@@ -63,7 +63,7 @@ const containerConfig = defineConfig({
    *
    * @default '__APP__'
    */
-  globalName: (import.meta.env.VITE_APP_GLOBAL_NAME as string) || '__APP__',
+  globalName: env('VITE_APP_GLOBAL_NAME', '__APP__'),
 
   /**
    * Global application configuration.
@@ -84,13 +84,13 @@ const containerConfig = defineConfig({
      * Base URL for all API requests.
      * Injected into HTTP services via `APP_CONFIG`.
      */
-    apiUrl: (import.meta.env.VITE_API_URL as string) || '',
+    apiUrl: env('VITE_API_URL', ''),
 
     /**
      * Current application environment.
      * Used for environment-specific behaviour in services.
      */
-    environment: (import.meta.env.VITE_APP_ENV as string) || 'development',
+    environment: env('VITE_APP_ENV', 'development'),
 
     /**
      * Feature flags — enable/disable features without a deploy.
@@ -98,10 +98,10 @@ const containerConfig = defineConfig({
      */
     featureFlags: {
       /** Enable the new checkout flow */
-      newCheckout: import.meta.env.VITE_FF_NEW_CHECKOUT === 'true',
+      newCheckout: env('VITE_FF_NEW_CHECKOUT', false),
 
       /** Enable the new UI component set */
-      newUI: import.meta.env.VITE_FF_NEW_UI === 'true',
+      newUI: env('VITE_FF_NEW_UI', false),
     },
   },
 
@@ -118,7 +118,7 @@ const containerConfig = defineConfig({
    * @param app - The bootstrapped Application instance
    */
   onReady: async (app) => {
-    if (import.meta.env.DEV) {
+    if (env('NODE_ENV', 'production') !== 'production') {
       console.log('[Container] Application bootstrapped ✅');
     }
   },

@@ -1,5 +1,19 @@
 # @stackra/ts-container
 
+## 2.0.13 — 2026-04-30
+
+### Added
+
+- 🔀 **Dual entry points** — split into `@stackra/ts-container` (core DI, no
+  React) and `@stackra/ts-container/react` (React bindings). Node-only consumers
+  no longer need React installed.
+
+### Fixed
+
+- 🔧 **ESLint v9 pin** — pinned eslint to `^9.28.0` via pnpm.overrides
+  (`eslint-plugin-react` incompatible with ESLint 10)
+- 🔧 **Engines** — standardized to `node>=22`, `pnpm>=10`
+
 ## 2.0.10 — 2026-04-25
 
 ### Fixed
